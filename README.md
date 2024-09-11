@@ -1,1 +1,2 @@
-# asset-tracker
+# Blockchain Asset Tracking
+A supply chain consists of many different participants exchanging goods, services, and payments. It is often desirable to track the physical assets digitally to be informed about their whereabouts, trigger processes, certify the ownership, and perform corresponding payments.
