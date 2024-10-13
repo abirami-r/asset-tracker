@@ -8,10 +8,10 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to Ethereum using a provider
-const provider = new ethers.providers.JsonRpcProvider('https://rinkeby.infura.io/v3/YOUR_INFURA_PROJECT_ID');
+const provider = new ethers.providers.JsonRpcProvider('https://rinkeby.infura.io/v3/');
 
 // Contract ABI and address
-const contractABI = require('./ABI.json'); // Import the contract's ABI
+const contractABI = require('./ABI.json'); 
 const contractAddress = 'YOUR_DEPLOYED_CONTRACT_ADDRESS';
 const contract = new ethers.Contract(contractAddress, contractABI, provider);
 
