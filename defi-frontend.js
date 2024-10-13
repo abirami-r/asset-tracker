@@ -10,7 +10,7 @@ function AssetTracker() {
 
   const getAssetDetails = async (id) => {
     try {
-      const response = await axios.get(`http://localhost:5000/asset/${id}`);
+      const response = await axios.get(`http://localhost:5000/asset/`);
       setAsset(response.data);
     } catch (error) {
       console.error('Error fetching asset details:', error);
@@ -24,7 +24,7 @@ function AssetTracker() {
         newOwner,
         newLocation,
       });
-      getAssetDetails(assetId); // Fetch updated asset details
+      getAssetDetails(); 
     } catch (error) {
       console.error('Error transferring asset:', error);
     }
